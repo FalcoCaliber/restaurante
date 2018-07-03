@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|News+Cycle|Permanent+Marker" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -18,91 +19,190 @@
 
 
 
-		<!-- nav -->
+	<!-- nav -->
 
-
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	<div class="container-fluid navContainer" id="navbar">
+		<nav class="navbar navbar-default">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-							<a class="navbar-brand" href="#"><img src="img/name-01.png" alt=""></a>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-							</ul>
-						</div>
-						<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container-fluid -->
-				</nav>
-					<div class="container">
-
-
-		</div>
-
-
-		<!-- carousel  -->
-
-
-
-		<div class="row">
-			<div class="col-md-6">
-
+				<a class="navbar-brand" href="#"><h2 class="navbar-brand">BBS</h2><img  class='burger-icon' src="img/burgericon.png" alt=""></a>
 			</div>
 
-			<div class="col-md-6">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">About</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="#catering">Catering</a></li>
+				</ul>
 			</div>
-
-		</div>
+			<!-- /.navbar-collapse -->
+		</nav>
 	</div>
 
-	<!-- vege splash -->
-
-	<div class="jumbotron hero">
-		<div class="container text-center text-uppercase">
-			<h2>Fresno Bee</h2>
-			<h3>The freshest and best ingredients come together to make some of thhe best food i have ever ate. You can really taste the central valley in every bite.</h3>
-		</div>
-	</div>
 
 	<div class="container">
-
-		<div class="row">
-			<div class="col-md-12 text-center border-bottom">
-				<h1>Menu</h1>
+		<div class="row about" id="about">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="row text-center">
+					<h1>Big Burger Sr.</h1>
+					<h2>The Best Burgers. <br><u>Period</u></h2><br></div>
+				<div class="row">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe suscipit voluptas nostrum omnis libero cum odit harum aut culpa praesentium animi impedit id illum vero, odio est fugiat quos.</h4>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12 aboutBurger">
+				<img src="img/burger1.jpg" alt="" class="img-responsive burger1">
 			</div>
 		</div>
-
-		<div class="menu">
-
-		</div>
-
-
-
 	</div>
 
 
+	<div class="jumbotron beef-splash">
+		<div class="container beef-contain">
+			<div class=" well well-xl beef-well">
+				<div class="row beef-row">
+					<div class="col-md-4">
+						<img src="img/PrimeBWTransparent.png" alt="" class="usda img-responsive">
+					</div>
+					<div class="col-md-8 beef-col text-center">
+						<h3> Fresh beef from local butchers</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="jumbotron hero">
+		<div class="container text-center text-uppercase bee-entry">
+			<div class="row">
+			<h2>-Fresno Bee</h2>
+			<h3>"We came for burgers. We were not dissapointed..."</h3>
+			</div>
+		</div>
+
+		<div class="container" id="menu">
+			<div class="menu" >
+				<div class="row">
+					<div class="col-md-12 text-center border-bottom">
+						<h1>Menu</h1>
+					</div>
+				</div>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="col-sm-4 col-xs-4 text-center active menu-tab"><a href="#burgers" aria-controls="burgers" role="tab" data-toggle="tab"><img src="img/lunch1.jpg" alt="" class="img-responsive"><h3>Big Burgers</h3></a></li>
+					<li role="presentation" class="col-sm-4 col-xs-4 text-center menu-tab"><a href="#grilledCheese" aria-controls="grilledCheese" role="tab" data-toggle="tab"><img src="img/lunch2.jpg" alt="" class="img-responsive"><h3>Grilled Cheese</h3></a></li>
+					<li role="presentation" class="col-sm-4 col-xs-4 text-center menu-tab"><a href="#beers" aria-controls="beers" role="tab" data-toggle="tab"><img src="img/beer1.jpg" alt="" class="img-responsive"><h3>Beers</h3></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="burgers">
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li><u>Big Burger Sr.</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi amet, sapiente quae? Deserunt assumenda nobis.</p>
+									</li>
+									<li><u> Cheese Burger</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis sint, fuga explicabo cumque voluptates.</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li><u>Bacon Burger</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quo praesentium molestiae aliquam iusto itaque vel repellat dolorum, magni in.</p>
+									</li>
+									<li><u>Kids Burger Jr.</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero omnis nulla sunt laudantium vero error consequatur quo! Accusantium, enim, quis molestiae dolores similique quia eligendi.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="grilledCheese">
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li><u>Grilled Cheese Sr.</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit obcaecati ipsa quo, vero eius deleniti reprehenderit officiis doloribus molestias deserunt?</p>
+									</li>
+									<li><u>Bacon Grilled Cheese</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia velit nihil, id debitis dolorum quam. Pariatur placeat voluptatem soluta quae!</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li><u>"No Lactose For Me" Panini</u></li>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nihil sapiente aut animi id vel iure minima labore, dolorem repellat.</p>
+									<li><u>Grilled Cheese Jr.</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eaque minima aperiam voluptas explicabo, debitis fugiat magni ad ex aliquid.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="beers">
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li><u>Local Ales</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quas, aperiam consequuntur deserunt a aliquam?</p>
+									</li>
+									<li><u>Local Stouts</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugit molestias possimus vero dolorem, perferendis, mollitia qui sed hic alias.</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li><u>Local Wheat Beers</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aspernatur, sequi consectetur!</p>
+									</li>
+									<li><u>Local Lagers</u>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nam ut natus, ea laudantium assumenda officiis quae ipsa alias dolor.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid" id="catering">
+		<div class="row">
+		<div class="col-md-6 col-xs-6 contact-info text-center">
+			<h2>Catering</h2>
+			<address>
+			  Big Burger Sr.<br/>
+				123 Market St. Suite 900<br/>
+				Fresno, CA 95432</br>
+				P: (559) 456-7890<br>
+			</address>
+
+		</div>
+		<div class="col-md-6 col-xs-6 gmap">
+			<iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102339.52430163282!2d-119.79179!3d36.7199161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1530601090842" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	</footer>
 
 
 
-
-
-
+	<link rel="stylesheet" href="js/bootstrap.min.js">
 </body>
 
 </html>
